@@ -1,45 +1,41 @@
-🎨 AI Virtual Painter 🤖✍️
-Draw in the air using your hand — Powered by AI & Computer Vision
-✨ Overview
+# 🎨 AI Virtual Painter 🤖✋
 
-AI Virtual Painter is a real-time computer vision project that lets you draw on screen using just your fingers.
-Built using MediaPipe Hand Tracking + OpenCV, it converts hand gestures into a virtual painting experience.
+A real-time AI-powered virtual painting application using **Hand Tracking (MediaPipe)** and **OpenCV**.  
+Draw, erase, and control colors in the air using just your fingers — no mouse or touchscreen needed.
 
-👉 No mouse
-👉 No touchscreen
-👉 Just your hand ✋
+---
 
-🚀 Demo Features
+## ✨ Overview
 
-🖐️ Hand Tracking in Real Time
-☝️ 1 Finger → Draw Mode
-✌️ 2 Fingers → Selection Mode
-🎨 4 Bright Colors (Blue, Green, Red, Yellow)
-🧽 Eraser Mode (clean removal)
-🗑️ Clear Canvas Button
-📺 Smooth 640×480 interface
+AI Virtual Painter allows users to interact with a virtual canvas using hand gestures detected through a webcam.  
+It uses **MediaPipe hand landmarks** to track finger movement and converts it into drawing actions.
 
-🧠 How It Works
+---
+
+## 🚀 Features
+
+- ✋ Real-time hand tracking using MediaPipe
+- ☝️ Draw using index finger only
+- ✌️ Switch to selection mode using two fingers
+- 🎨 4 bright colors (Blue, Green, Red, Yellow)
+- 🧽 Eraser mode (gesture-based)
+- 🗑️ Clear canvas option
+- 🖥️ Smooth 640×480 interface
+- ⚡ Fast real-time performance
+
+---
+
+## 🧠 How It Works
+
+```text id="flow1"
 Webcam Input
-     ↓
-MediaPipe Hand Landmarks (21 points)
-     ↓
-Finger Gesture Detection
-     ↓
+      ↓
+MediaPipe Hand Detection
+      ↓
+21 Hand Landmarks Extraction
+      ↓
+Finger Gesture Recognition
+      ↓
 Mode Selection (Draw / Select)
-     ↓
+      ↓
 Virtual Canvas Rendering (OpenCV)
-🎮 Controls
-Gesture	Action
-☝️ One Finger	Draw on canvas
-✌️ Two Fingers	Enter selection mode
-Move finger on color box	Select color
-Move to 🧽 ERASER	Erase drawing
-Move to 🗑️ CLEAR	Reset canvas
-🎨 UI Preview
-🔵 BLUE   🟢 GREEN   🔴 RED   🟡 YELLOW   🧽 ERASE   🗑️ CLEAR
-🛠️ Tech Stack
-🐍 Python
-🎥 OpenCV
-✋ MediaPipe
-🔢 NumPy
